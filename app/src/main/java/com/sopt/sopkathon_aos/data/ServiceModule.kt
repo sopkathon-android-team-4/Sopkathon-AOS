@@ -1,8 +1,8 @@
 package com.sopt.sopkathon_aos.data
 
+import com.sopt.sopkathon_aos.data.api.AuthService
 import com.sopt.sopkathon_aos.data.api.ConcernsPostApi
 import com.sopt.sopkathon_aos.data.api.ConnectInstagramApi
-import com.sopt.sopkathon_aos.data.api.AuthService
 import com.sopt.sopkathon_aos.data.api.LuckyAnswerApi
 
 object ServiceModule {

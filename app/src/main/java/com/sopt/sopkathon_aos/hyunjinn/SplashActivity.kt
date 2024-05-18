@@ -1,6 +1,5 @@
-package com.sopt.sopkathon_aos
+package com.sopt.sopkathon_aos.hyunjinn
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -9,11 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 import com.sopt.sopkathon_aos.MainActivity
 import com.sopt.sopkathon_aos.R
-import com.sopt.sopkathon_aos.arinming.HomeActivity
-import com.sopt.sopkathon_aos.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +23,6 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish()
         }, 8000) // 8000 milliseconds = 8 seconds
     }
 }

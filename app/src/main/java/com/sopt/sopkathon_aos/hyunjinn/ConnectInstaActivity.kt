@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.hyunjinn.ConnectInsta
+package com.sopt.sopkathon_aos.hyunjinn
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -17,7 +17,6 @@ import androidx.lifecycle.Observer
 import com.sopt.sopkathon_aos.arinming.HomeActivity
 import com.sopt.sopkathon_aos.databinding.ActivityConnectinstaBinding
 import com.sopt.sopkathon_aos.s9hn.mypage.MyPageActivity
-import com.sopt.sopkathon_aos.t1nm1ksun.profileinput.ProfileInputActivity
 import java.io.File
 import java.io.FileOutputStream
 
@@ -34,12 +33,12 @@ class ConnectInstaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.tvConnecinstaShare.setOnClickListener { shareInstagram() }
-        binding.ivConnectinstaAdd.setOnClickListener{
+        binding.ivConnectinstaAdd.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
-        binding.btMypageTonext.setOnClickListener{
+        binding.btMypageTonext.setOnClickListener {
             val intent = Intent(this, MyPageActivity::class.java)
             startActivity(intent)
             finish()

@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.t1nm1ksun.profileinput
+package com.sopt.sopkathon_aos.t1nm1ksun
 
 import android.Manifest
 import android.content.Intent
@@ -62,8 +62,6 @@ class ProfileInputActivity : AppCompatActivity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         binding = ActivityProfileinputBinding.inflate(layoutInflater)
         setContentView(binding.root)

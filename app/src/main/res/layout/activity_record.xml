@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/img_connectinsta_bg"
     tools:context=".hyunjinn.ConnectInstaActivity">
-    <!--android:background="@drawable/bg_connectinsta"-->
 
     <ImageView
         android:layout_width="wrap_content"
@@ -214,7 +213,7 @@
         android:id="@+id/tv_connectinsta_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="완료"
+        android:text="닫기"
         android:textAppearance="@style/Head2_M_22"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/bt_mypage_tonext"
@@ -236,4 +235,5 @@
         app:layout_constraintEnd_toEndOf="@id/v_mypage_line1"
         app:layout_constraintStart_toStartOf="@id/v_mypage_line1"
         app:layout_constraintTop_toTopOf="@id/iv_connecinsta_lucky_bg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

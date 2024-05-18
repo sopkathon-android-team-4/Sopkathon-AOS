@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sopt.sopkathon_aos.databinding.ActivityLoadingBinding
-import com.sopt.sopkathon_aos.hyunjinn.ConnectInsta.ConnectInstaActivity
+import com.sopt.sopkathon_aos.hyunjinn.ConnectInstaActivity
 
 class LoadingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoadingBinding
