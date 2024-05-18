@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="SpUsage">
+
+    <style name="Head1_M_20">
+        <item name="fontFamily">@font/pretendard_medium</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontWeight">500</item>
+        <item name="android:letterSpacing">-0.8</item>
+    </style>
+
+    <style name="Body1_M_16">
+        <item name="fontFamily">@font/pretendard_medium</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontWeight">400</item>
+        <item name="android:letterSpacing">-0.64</item>
+    </style>
+
+    <style name="Caption1_M_12">
+        <item name="fontFamily">@font/pretendard_medium</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+</resources>
