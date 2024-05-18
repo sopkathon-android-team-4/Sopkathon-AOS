@@ -8,7 +8,7 @@ object BindingAdapter {
 
     @JvmStatic
     @BindingAdapter("loadImageUrl")
-    fun loadImage(view: ImageView, imageUrl: String?) {
+    fun loadImage(view: ImageView, imageUrl: Int) {
         view.load(imageUrl)
     }
 }
