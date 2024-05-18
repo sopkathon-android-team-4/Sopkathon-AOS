@@ -24,7 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-
+        <activity
+            android:name=".t1nm1ksun.ProfileInput.ProfileInput.ProfileInputActivity"
+            android:exported="false" />
         <activity
             android:name=".hyunjinn.ConnectInsta.ConnectInstaActivity"
             android:exported="false" />
