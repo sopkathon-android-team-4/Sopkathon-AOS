@@ -24,6 +24,7 @@ class HomeActivity : AppCompatActivity() {
 
         setupEditText()
         checkEditText()
+        onClickClearButton()
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
@@ -60,21 +61,25 @@ class HomeActivity : AppCompatActivity() {
             binding.btnClear.isEnabled = it
             if (it) {
                 binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.black))
-                onClickClearButton(RequestConcernsDto(binding.etLetter.text.toString()))
             } else {
                 binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.mg_bcbcbc))
             }
         }
-    }
-
-    private fun onClickClearButton(request: RequestConcernsDto) {
-        val intent = Intent(this, LoadingActivity::class.java).apply {
-            putExtra("concerns", request.content)
-        }
 
         binding.btnClear.setOnClickListener {
+            val request = RequestConcernsDto(binding.etLetter.text.toString())
             viewModel.onPostConcerns(request)
-            startActivity(intent)
+        }
+    }
+
+    private fun onClickClearButton() {
+        viewModel.isPostSuccessful.observe(this) { isSuccessful ->
+            if (isSuccessful) {
+                val intent = Intent(this, LoadingActivity::class.java).apply {
+                    putExtra("concerns", binding.etLetter.text.toString())
+                }
+                startActivity(intent)
+            }
         }
     }
 }
