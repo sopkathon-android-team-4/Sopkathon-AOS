@@ -24,6 +24,9 @@
         <activity
             android:name=".hyunjinn.ConnectInsta.ConnectInstaActivity"
             android:exported="false" />
+        <activity
+            android:name=".arinming.LoadingActivity"
+            android:exported="false" />
 
         <activity
             android:name=".arinming.HomeActivity"

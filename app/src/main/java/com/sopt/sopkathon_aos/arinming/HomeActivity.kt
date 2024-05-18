@@ -1,6 +1,7 @@
 package com.sopt.sopkathon_aos.arinming
 
 import HomeViewModel
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -53,8 +54,13 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onClickClearButton(request: RequestConcernsDto) {
+        val intent = Intent(this, LoadingActivity::class.java).apply {
+            putExtra("concerns", request.content)
+        }
+
         binding.btnClear.setOnClickListener {
             viewModel.onPostConcerns(request)
+            startActivity(intent)
         }
     }
 }
