@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.kotlin.serialization)
     kotlin("kapt")
 }
 
@@ -14,7 +15,6 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -61,6 +61,7 @@ dependencies {
 
     // Okhttp3
     implementation(libs.okhttp3)
+    implementation(libs.okhttp3.interceptor)
 
     // coroutines
     implementation(libs.kotlinx.coroutines)

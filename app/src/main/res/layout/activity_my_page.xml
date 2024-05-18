@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".s9hn.mypage.MyPageActivity">
+
+    <TextView
+        android:id="@+id/tv_my_page_fixture_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="럭키"
+        android:textAppearance="@style/Head1_M_20"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_my_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="루시"
+        android:textAppearance="@style/Head1_M_20"
+        android:textColor="@color/magenta_F054DE"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_page_fixture_prev"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_page_fixture_prev"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_page_fixture_prev" />
+
+    <TextView
+        android:id="@+id/tv_my_page_fixture_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="님의"
+        android:textAppearance="@style/Head1_M_20"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_page_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_page_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_page_name" />
+
+    <ImageView
+        android:id="@+id/iv_my_page_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_page_fixture_post"
+        app:srcCompat="@drawable/img_my_logo" />
+
+    <ImageView
+        android:id="@+id/iv_my_page_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_my_home" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_page"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_my_page_logo"
+        app:spanCount="2"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_lucky_answer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
