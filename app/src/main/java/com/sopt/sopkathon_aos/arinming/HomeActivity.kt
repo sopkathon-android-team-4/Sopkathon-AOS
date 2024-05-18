@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import com.sopt.sopkathon_aos.R
+import com.sopt.sopkathon_aos.data.request.RequestConcernsDto
 import com.sopt.sopkathon_aos.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class HomeActivity : AppCompatActivity() {
             binding.btnClear.isEnabled = it
             if (it) {
                 binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.black))
+                onClickClearButton(RequestConcernsDto(binding.etLetter.text.toString()))
             } else {
                 binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.mg_bcbcbc))
             }
@@ -50,6 +52,12 @@ class HomeActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
+    }
+
+    private fun onClickClearButton(request: RequestConcernsDto) {
+        binding.btnClear.setOnClickListener {
+            viewModel.onPostConcerns(request)
         }
     }
 }
