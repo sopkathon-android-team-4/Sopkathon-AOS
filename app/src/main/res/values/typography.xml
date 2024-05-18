@@ -20,4 +20,10 @@
         <item name="android:textSize">12dp</item>
         <item name="android:fontWeight">400</item>
     </style>
+
+    <style name="Yde1_L_20">
+        <item name="fontFamily">@font/yde_street_l</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontWeight">300</item>
+    </style>
 </resources>
