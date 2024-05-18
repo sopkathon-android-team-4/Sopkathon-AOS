@@ -62,8 +62,6 @@ class ProfileInputActivity : AppCompatActivity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         binding = ActivityProfileinputBinding.inflate(layoutInflater)
         setContentView(binding.root)

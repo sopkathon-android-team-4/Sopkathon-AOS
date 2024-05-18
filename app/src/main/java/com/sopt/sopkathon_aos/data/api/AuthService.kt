@@ -9,7 +9,7 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface AuthService {
-    @POST("api/v1/members")
+    @POST("members")
     fun postMember(
         @Body request: MemberCreateDto,
     ): Call<SuccessStatusResponse>
