@@ -3,6 +3,8 @@ package com.sopt.sopkathon_aos.arinming
 import HomeViewModel
 import android.content.Intent
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.inputmethod.InputMethodManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -19,16 +21,17 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel.isButtonEnabled.observe(this) {
-            binding.btnClear.isEnabled = it
-            if (it) {
-                binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.black))
-                onClickClearButton(RequestConcernsDto(binding.etLetter.text.toString()))
-            } else {
-                binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.mg_bcbcbc))
-            }
-        }
+
         setupEditText()
+        checkEditText()
+        onClickClearButton()
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        val imm: InputMethodManager =
+            getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+        return super.dispatchTouchEvent(ev)
     }
 
     private fun setupEditText() {
@@ -53,14 +56,30 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun onClickClearButton(request: RequestConcernsDto) {
-        val intent = Intent(this, LoadingActivity::class.java).apply {
-            putExtra("concerns", request.content)
+    private fun checkEditText() {
+        viewModel.isButtonEnabled.observe(this) {
+            binding.btnClear.isEnabled = it
+            if (it) {
+                binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.black))
+            } else {
+                binding.btnClear.setBackgroundColor(ContextCompat.getColor(this, R.color.mg_bcbcbc))
+            }
         }
 
         binding.btnClear.setOnClickListener {
+            val request = RequestConcernsDto(binding.etLetter.text.toString())
             viewModel.onPostConcerns(request)
-            startActivity(intent)
+        }
+    }
+
+    private fun onClickClearButton() {
+        viewModel.isPostSuccessful.observe(this) { isSuccessful ->
+            if (isSuccessful) {
+                val intent = Intent(this, LoadingActivity::class.java).apply {
+                    putExtra("concerns", binding.etLetter.text.toString())
+                }
+                startActivity(intent)
+            }
         }
     }
 }

@@ -14,12 +14,16 @@ class LoadingActivity : AppCompatActivity() {
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setAnimationListener()
+    }
+
+
+    private fun setAnimationListener() {
         val concerns = intent.getStringExtra("concerns")
 
         val intent = Intent(this, ConnectInstaActivity::class.java).apply {
             putExtra("concerns", concerns)
         }
-
 
         binding.lottie.addAnimatorListener(object : Animator.AnimatorListener {
             override fun onAnimationStart(p0: Animator) {
