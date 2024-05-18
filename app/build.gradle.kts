@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.kotlin.serialization)
     kotlin("kapt")
 }
 
@@ -61,6 +62,7 @@ dependencies {
 
     // Okhttp3
     implementation(libs.okhttp3)
+    implementation(libs.okhttp3.interceptor)
 
     // coroutines
     implementation(libs.kotlinx.coroutines)
