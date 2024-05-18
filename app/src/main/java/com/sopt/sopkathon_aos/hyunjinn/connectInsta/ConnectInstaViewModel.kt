@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.hyunjinn.ConnectInsta
+package com.sopt.sopkathon_aos.hyunjinn.connectInsta
 
 import android.util.Log
 import androidx.lifecycle.LiveData

@@ -3,10 +3,9 @@ package com.sopt.sopkathon_aos.arinming
 import android.animation.Animator
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.sopt.sopkathon_aos.databinding.ActivityLoadingBinding
-import com.sopt.sopkathon_aos.hyunjinn.ConnectInsta.ConnectInstaActivity
+import com.sopt.sopkathon_aos.hyunjinn.connectInsta.ConnectInstaActivity
 
 class LoadingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoadingBinding

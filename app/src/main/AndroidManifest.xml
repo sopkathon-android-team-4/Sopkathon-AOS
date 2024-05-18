@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".hyunjinn.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,13 +35,13 @@
             android:exported="false" />
 
         <activity
-            android:name=".hyunjinn.ConnectInsta.ConnectInstaActivity"
+            android:name=".hyunjinn.connectInsta.ConnectInstaActivity"
             android:exported="false" />
         <activity
             android:name=".arinming.LoadingActivity"
             android:exported="false" />
 
-        <activity android:name=".arinming.HomeActivity"/>
+        <activity android:name=".arinming.HomeActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
