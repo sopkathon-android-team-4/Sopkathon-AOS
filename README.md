@@ -7,6 +7,28 @@
 | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/1bdb4be5-6a96-4b0d-83e6-01d7306cc490" width="200px"  height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/891fee17-df02-4286-a161-5969958572d3" width="200px" height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/16e9e238-4f1e-45d5-b360-f788806fd1d5" width="200px" height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/6b6a33a0-d215-4b7c-a519-0c0958cd6473" width="200px" height="200dp"> |
 |                                                                 원영적사고                                                                 |                                                             내정보입력 / 온보딩                                                              |                                                               홈 / 로딩화면                                                               |                                                            인스타캡쳐 / 마이페이지                                                             | 
 
+**`👋 서비스명`**
+
+<aside>
+🍀 **럭키 럭키 체인지 a.k.a. 럭럭체**
+
+</aside>
+
+**`서비스 설명`**
+
+<aside>
+🍀 불행한 상황들을 적으면 럭키한 초긍정적 사고로 변환해주는 서비스
+
+</aside>
+
+**`가치제안`**
+
+<aside>
+<img src="/icons/arrow-right_gray.svg" alt="/icons/arrow-right_gray.svg" width="40px" /> 어떠한 상황도 **초긍정적으로 치환**하는 자세를 형성해줄 수 있다.
+어느 상황, 어느 감정이 들어도 이를 극복하여 사람들의 **감정 회복 탄력성**을 길러 줄 수 있다.
+
+</aside>
+
 ## 👋 주요 기능
 ### 부정적 감정이 쌓여가는 것을 다시 원래 상태로 (0으로) 돌려놓을 수 있다면?
 부정적인 감정을 털어 놓고, 이를 긍정적인 사고를 통해 긍정적인 상황, 긍정적인 감정으로 변환시켜줄 수 있는 기능을 통해, 페인포인트를 해결할 수 있습니다.
