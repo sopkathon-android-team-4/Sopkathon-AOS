@@ -68,6 +68,10 @@ ui 단위로 브랜치를 구성합니다.
 ## 📷 **시연영상**
 
 
+https://github.com/sopkathon-android-team-4/Sopkathon-AOS/assets/95455569/87b1e695-f6ab-4d89-a1b4-0be83ad9d630
+
+
+
 
 ## 📷 **before..**
 <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/0377ceeb-0097-4ec7-9dc6-af7dcc30105f" width="400px" height="300dp">
