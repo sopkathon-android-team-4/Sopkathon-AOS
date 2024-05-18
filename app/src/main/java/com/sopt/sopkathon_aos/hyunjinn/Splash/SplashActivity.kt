@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         // 8초 후 메인 액티비티로 전환
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 8000) // 8000 milliseconds = 8 seconds
