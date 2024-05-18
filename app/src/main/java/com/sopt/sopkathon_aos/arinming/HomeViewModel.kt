@@ -17,9 +17,11 @@ class HomeViewModel : ViewModel() {
     private val _isButtonEnabled = MutableLiveData<Boolean>(false)
     val isButtonEnabled: LiveData<Boolean> get() = _isButtonEnabled
 
+    private val _isPostSuccessful = MutableLiveData<Boolean>()
+    val isPostSuccessful: LiveData<Boolean> get() = _isPostSuccessful
+
     fun onTextInput(input: CharSequence) {
         _letterText.value = input.toString()
-
         _isButtonEnabled.value = input.toString().isNotBlank()
     }
 
@@ -31,17 +33,15 @@ class HomeViewModel : ViewModel() {
                     response: Response<ResponseConcernsDto>,
                 ) {
                     if (response.isSuccessful) {
-                        Log.e("Test", response.body().toString())
-
+                        _isPostSuccessful.value = true
                     } else {
                         val error = response.code()
-                        Log.e("Test", error.toString())
-
+                        _isPostSuccessful.value = false
                     }
                 }
 
                 override fun onFailure(call: Call<ResponseConcernsDto>, t: Throwable) {
-                    Log.e("Test", t.toString())
+                    _isPostSuccessful.value = false
                 }
             }
         )
