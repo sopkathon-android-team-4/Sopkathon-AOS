@@ -74,7 +74,7 @@ ui 단위로 브랜치를 구성합니다.
 
 
 ## 📷 **after..**
-<img src="" width="400px" height="300dp">
+<img src="https://github.com/sopkathon-android-team-4/Sopkathon-AOS/assets/95455569/c25dbffb-7ad9-4626-a400-18c37433c6a5" width="400px" height="300dp">
 
 
 ## 📁 *****Foldering*****
