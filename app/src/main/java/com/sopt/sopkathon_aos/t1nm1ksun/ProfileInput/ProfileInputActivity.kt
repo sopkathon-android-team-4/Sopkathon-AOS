@@ -16,6 +16,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.sopt.sopkathon_aos.R
+import com.sopt.sopkathon_aos.arinming.HomeActivity
 import com.sopt.sopkathon_aos.data.ServiceModule
 import com.sopt.sopkathon_aos.data.request.MemberCreateDto
 import com.sopt.sopkathon_aos.data.response.SuccessStatusResponse
@@ -190,12 +191,14 @@ class ProfileInputActivity : AppCompatActivity() {
                     Log.d("SignUp", response.toString())
                     if (response.isSuccessful) {
                         val data: SuccessStatusResponse? = response.body()
-                        val userId = data?.data?.memberId
+                        val memberId = data?.data?.memberId
 
-                        Log.d("SignUp", "data: $data, userId: $userId")
-                        val intent = Intent(this@ProfileInputActivity, LoginActivity::class.java)
+                        Log.d("SignUp", "data: $data, userId: $memberId")
+                        val intent = Intent(this@ProfileInputActivity, HomeActivity::class.java)
+                        intent.putExtra("memberId", memberId)
 
                         startActivity(intent)
+
                     } else {
                         Log.d("SignUp123123", response.toString())
                         val errorC = response.code()
