@@ -1,5 +1,6 @@
 package com.sopt.sopkathon_aos.s9hn.mypage
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
@@ -14,7 +15,8 @@ class MyPageActivity : AppCompatActivity() {
     private val myPageAdapter by lazy { MyPageAdapter(::navigateToConnectInstagram) }
 
     private fun navigateToConnectInstagram(content: String) {
-        Log.d("123123", content)
+        val intent = Intent(this, RecordActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

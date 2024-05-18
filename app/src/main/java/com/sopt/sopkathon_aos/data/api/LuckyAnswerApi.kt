@@ -6,7 +6,7 @@ import retrofit2.http.Path
 
 interface LuckyAnswerApi {
 
-    @GET("api/v1/answers/{memberId}/list")
+    @GET("answers/{memberId}/list")
     suspend fun getLuckyAnswers(
         @Path("memberId") memberId: Long = 1,
     ): LuckyAnswerResponseDto
