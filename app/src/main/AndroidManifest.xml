@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -17,10 +19,23 @@
         tools:targetApi="31">
         <activity
             android:name=".s9hn.mypage.MyPageActivity"
-            android:exported="true" />
+            android:exported="false" />
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".t1nm1ksun.profileinput.ProfileInputActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".hyunjinn.ConnectInsta.ConnectInstaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".arinming.LoadingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".arinming.HomeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

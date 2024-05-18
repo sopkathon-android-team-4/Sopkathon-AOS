@@ -8,5 +8,11 @@
     <color name="mg_bcbcbc">#BCBCBC</color>
     <color name="dg_666666">#666666</color>
     <color name="bg_373737">#373737</color>
+
+    <color name="background_e2e2e2">#E2E2E2</color>
+    <color name="green_68e745">#68E745</color>
+    <color name="blue_5397f3">#5397F3</color>
+    <color name="magenta_f054de">#F054DE</color>
+    <color name="yello_f4ff82">#F4FF82</color>
     <color name="magenta_F054DE">#F054DE</color>
 </resources>
