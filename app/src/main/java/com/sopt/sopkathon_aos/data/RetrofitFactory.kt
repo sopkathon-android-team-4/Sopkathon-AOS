@@ -1,3 +1,6 @@
+package com.sopt.sopkathon_aos.data
+
+
 import android.util.Log
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.sopt.sopkathon_aos.BuildConfig

@@ -14,5 +14,5 @@ data class ResponseLuckyDto(
 @Serializable
 data class LuckyData(
     @SerialName("content")
-    val content: String
+    val content: String,
 )
