@@ -1,10 +1,13 @@
-package com.sopt.sopkathon_aos.t1nm1ksun.ProfileInput
+package com.sopt.sopkathon_aos.t1nm1ksun.ProfileInput.ProfileInput
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
@@ -13,8 +16,12 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import coil.load
+import coil.transform.CircleCropTransformation
 import com.sopt.sopkathon_aos.R
 import com.sopt.sopkathon_aos.arinming.HomeActivity
 import com.sopt.sopkathon_aos.data.ServiceModule
@@ -28,14 +35,47 @@ import retrofit2.Response
 class ProfileInputActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileinputBinding
 
+    private val requestPermissionLauncher: ActivityResultLauncher<String> =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+            if (!isGranted) {
+                openGallery()
+            }
+        }
+
+    private fun openGallery() {
+        val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+        pickImageLauncher.launch(gallery)
+    }
+
+    private val pickImageLauncher: ActivityResultLauncher<Intent> =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+                val data: Intent? = result.data
+                data?.data?.let {
+                    binding.ivProfile.load(it) {
+                        transformations(CircleCropTransformation())
+                    }
+                    binding.ivProfile
+                    binding.ivProfile.clipToOutline
+                }
+            }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         binding = ActivityProfileinputBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.ivProfile.setOnClickListener {
+            checkGalleryPermission()
+
+        }
         checkConditions()
         binding.etNickname.addTextChangedListener(nicknameTextWatcher)
 
         updateNicknameCount(binding.etNickname.text?.length ?: 0)
+
 
         binding.etNickname.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_NEXT) {
@@ -70,6 +110,19 @@ class ProfileInputActivity : AppCompatActivity() {
             }
         }
         binding.etMbti.addTextChangedListener(textWatcher)
+
+
+    }
+
+    private fun checkGalleryPermission() {
+        if (this.checkSelfPermission(
+                Manifest.permission.READ_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            openGallery()
+        } else {
+            requestPermissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
+        }
     }
 
     private fun updateNicknameCount(length: Int) {
@@ -234,6 +287,7 @@ class ProfileInputActivity : AppCompatActivity() {
         val regex = "^(?:[1-9]|[1-9][0-9])$".toRegex()
         return regex.matches(age)
     }
+
 
 }
 
