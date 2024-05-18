@@ -11,10 +11,10 @@ data class ResponseConcernsDto(
     val message: String,
     @SerialName("data")
     val data: Data,
-){
+) {
     @Serializable
     data class Data(
         @SerialName("concernId")
-        val concernId:Long,
+        val concernId: Long,
     )
 }

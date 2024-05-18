@@ -2,9 +2,6 @@ package com.sopt.sopkathon_aos.arinming
 
 import HomeViewModel
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat

@@ -2,7 +2,6 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.sopt.sopkathon_aos.data.RetrofitFactory
 import com.sopt.sopkathon_aos.data.ServiceModule
 import com.sopt.sopkathon_aos.data.request.RequestConcernsDto
 import com.sopt.sopkathon_aos.data.response.ResponseConcernsDto
@@ -29,7 +28,7 @@ class HomeViewModel : ViewModel() {
             object : Callback<ResponseConcernsDto> {
                 override fun onResponse(
                     call: Call<ResponseConcernsDto>,
-                    response: Response<ResponseConcernsDto>
+                    response: Response<ResponseConcernsDto>,
                 ) {
                     if (response.isSuccessful) {
                         Log.e("Test", response.body().toString())

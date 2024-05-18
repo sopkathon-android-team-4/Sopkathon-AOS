@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connectinsta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_connectinsta_bg"
+    tools:context=".hyunjinn.ConnectInsta.ConnectInstaActivity">
+    <!--android:background="@drawable/bg_connectinsta"-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/img_capture_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lo_connectinsta_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/v_connectinsta_name_bg"
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_connectinsta_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Head1_M_20"
+            app:layout_constraintBottom_toBottomOf="@id/v_connectinsta_name_bg"
+            app:layout_constraintEnd_toEndOf="@id/v_connectinsta_name_bg"
+            app:layout_constraintStart_toStartOf="@id/v_connectinsta_name_bg"
+            app:layout_constraintTop_toTopOf="@id/v_connectinsta_name_bg" />
+
+        <TextView
+            android:id="@+id/tv_connectinsta_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="을 위한"
+            android:textAppearance="@style/Head1_M_20"
+            android:textColor="#CCFFFFFF"
+            app:layout_constraintStart_toEndOf="@id/v_connectinsta_name_bg"
+            app:layout_constraintTop_toTopOf="@id/tv_connectinsta_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lo_connectinsta_lucky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lo_connectinsta_name">
+
+        <ImageView
+            android:id="@+id/iv_connectinsta_lucky"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_luckymessage_insta"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_connectinsta_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="가 도착했어요"
+            android:textAppearance="@style/Head1_M_20"
+            android:textColor="#CCFFFFFF"
+            app:layout_constraintStart_toEndOf="@id/iv_connectinsta_lucky" />
+
+        <ImageView
+            android:id="@+id/iv_connecinsta_clover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_capture_clover"
+            app:layout_constraintStart_toEndOf="@id/tv_connectinsta_send" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_connecinsta_lucky_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_capture_paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lo_connectinsta_lucky" />
+
+    <View
+        android:id="@+id/v_mypage_line1"
+        android:layout_width="283dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="80dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_connecinsta_lucky_bg" />
+
+    <View
+        android:id="@+id/v_mypage_line2"
+        android:layout_width="283dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_mypage_line1" />
+
+    <View
+        android:id="@+id/v_mypage_line3"
+        android:layout_width="283dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_mypage_line2" />
+
+    <View
+        android:id="@+id/v_mypage_line4"
+        android:layout_width="283dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_mypage_line3" />
+
+    <View
+        android:id="@+id/v_mypage_line5"
+        android:layout_width="283dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toBottomOf="@id/v_mypage_line4" />
+
+    <ImageView
+        android:id="@+id/iv_connecinsta_share_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/img_capture_share"
+        app:layout_constraintBottom_toBottomOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_lucky_bg" />
+
+    <TextView
+        android:id="@+id/tv_connecinsta_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="럭키 메시지 공유하기"
+        android:textAppearance="@style/Body1_M_16"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/iv_connecinsta_share_bg"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_share_bg"
+        app:layout_constraintStart_toStartOf="@id/iv_connecinsta_share_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_connecinsta_share_bg" />
+
+    <View
+        android:id="@+id/v_connectinsta_add_bg"
+        android:layout_width="71dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="15dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/iv_connecinsta_share_bg"
+        app:layout_constraintEnd_toEndOf="@id/iv_connecinsta_lucky_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_connecinsta_share_bg" />
+
+    <ImageView
+        android:id="@+id/iv_connectinsta_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_capture_add"
+        app:layout_constraintBottom_toBottomOf="@id/v_connectinsta_add_bg"
+        app:layout_constraintEnd_toEndOf="@id/v_connectinsta_add_bg"
+        app:layout_constraintStart_toStartOf="@id/v_connectinsta_add_bg"
+        app:layout_constraintTop_toTopOf="@id/v_connectinsta_add_bg" />
+
+    <View
+        android:id="@+id/bt_mypage_tonext"
+        android:layout_width="320dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="80dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_connectinsta_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:textAppearance="@style/Head2_M_22"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/bt_mypage_tonext"
+        app:layout_constraintEnd_toEndOf="@id/bt_mypage_tonext"
+        app:layout_constraintStart_toStartOf="@id/bt_mypage_tonext"
+        app:layout_constraintTop_toTopOf="@id/bt_mypage_tonext" />
+
+    <TextView
+        android:id="@+id/tv_connectinsta_luckymessage"
+        android:layout_width="@id/v_mypage_line1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:lineSpacingExtra="25dp"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="@{viewModel.luckyMessage}"
+        android:textAppearance="@style/Head2_M_22"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/v_mypage_line1"
+        app:layout_constraintStart_toStartOf="@id/v_mypage_line1"
+        app:layout_constraintTop_toTopOf="@id/iv_connecinsta_lucky_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
