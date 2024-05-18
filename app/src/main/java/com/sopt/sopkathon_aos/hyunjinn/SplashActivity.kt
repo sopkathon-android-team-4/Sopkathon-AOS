@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.hyunjinn.splash
+package com.sopt.sopkathon_aos.hyunjinn
 
 import android.content.Intent
 import android.os.Bundle
@@ -23,7 +23,6 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish()
         }, 8000) // 8000 milliseconds = 8 seconds
     }
 }

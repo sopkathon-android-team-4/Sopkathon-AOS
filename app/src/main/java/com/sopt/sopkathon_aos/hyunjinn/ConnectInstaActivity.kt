@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.hyunjinn.connectInsta
+package com.sopt.sopkathon_aos.hyunjinn
 
 import android.content.ActivityNotFoundException
 import android.content.Intent

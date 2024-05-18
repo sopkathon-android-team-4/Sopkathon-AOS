@@ -18,7 +18,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".hyunjinn.splash.SplashActivity"
+            android:name=".hyunjinn.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +35,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".hyunjinn.connectInsta.ConnectInstaActivity"
+            android:name=".hyunjinn.ConnectInstaActivity"
             android:exported="false" />
 
         <activity

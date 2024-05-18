@@ -8,7 +8,7 @@ import retrofit2.http.Header
 import retrofit2.http.POST
 
 interface ConcernsPostApi {
-    @POST("api/v1/concerns")
+    @POST("concerns")
     fun postConcerns(
         @Header("memberId") memberId: Long = 1,
         @Body request: RequestConcernsDto,
