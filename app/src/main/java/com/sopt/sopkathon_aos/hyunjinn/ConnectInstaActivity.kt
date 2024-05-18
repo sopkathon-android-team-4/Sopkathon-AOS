@@ -14,7 +14,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import androidx.lifecycle.Observer
+import com.sopt.sopkathon_aos.arinming.HomeActivity
 import com.sopt.sopkathon_aos.databinding.ActivityConnectinstaBinding
+import com.sopt.sopkathon_aos.s9hn.mypage.MyPageActivity
+import com.sopt.sopkathon_aos.t1nm1ksun.profileinput.ProfileInputActivity
 import java.io.File
 import java.io.FileOutputStream
 
@@ -31,11 +34,20 @@ class ConnectInstaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.tvConnecinstaShare.setOnClickListener { shareInstagram() }
-
+        binding.ivConnectinstaAdd.setOnClickListener{
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.btMypageTonext.setOnClickListener{
+            val intent = Intent(this, MyPageActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         // Observer 설정
         viewModel.serverText.observe(this, Observer { user ->
-            updateUI("럭키 데이지") // 사용자 데이터 변경 시 UI 업데이트
+            updateUI("럭키 루시") // 사용자 데이터 변경 시 UI 업데이트
         })
         // 서버에서 받아온 텍스트
         val serverText = ""
