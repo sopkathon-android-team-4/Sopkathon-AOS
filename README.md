@@ -92,3 +92,6 @@ ui 단위로 브랜치를 구성합니다.
 ```
 
 ## [➿ *****Convention*****]( https://www.notion.so/NOW-SOPT-4-Android-c06a6fc7ba6d4fe48aa4773e1ced8ca6 )
+
+prefix와 용도는 위 템플릿을 참고하며, 양식은 아래와 같이 작성한다.
+ex) feat: 기능 작성
