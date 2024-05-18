@@ -31,12 +31,13 @@
             android:exported="false" />
 
         <activity
-            android:name=".t1nm1ksun.profileinput.ProfileInputActivity"
+            android:name=".t1nm1ksun.ProfileInputActivity"
             android:exported="false" />
 
         <activity
             android:name=".hyunjinn.connectInsta.ConnectInstaActivity"
             android:exported="false" />
+
         <activity
             android:name=".arinming.LoadingActivity"
             android:exported="false" />

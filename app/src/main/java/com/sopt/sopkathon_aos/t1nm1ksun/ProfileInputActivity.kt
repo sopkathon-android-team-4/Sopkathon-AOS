@@ -1,4 +1,4 @@
-package com.sopt.sopkathon_aos.t1nm1ksun.profileinput
+package com.sopt.sopkathon_aos.t1nm1ksun
 
 import android.Manifest
 import android.content.Intent
