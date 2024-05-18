@@ -7,17 +7,17 @@
 | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/1bdb4be5-6a96-4b0d-83e6-01d7306cc490" width="200px"  height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/891fee17-df02-4286-a161-5969958572d3" width="200px" height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/16e9e238-4f1e-45d5-b360-f788806fd1d5" width="200px" height="200dp"> | <img src="https://github.com/2hyunjinn/2hyunjinn/assets/95455569/6b6a33a0-d215-4b7c-a519-0c0958cd6473" width="200px" height="200dp"> |
 |                                                                 원영적사고                                                                 |                                                             내정보입력 / 온보딩                                                              |                                                               홈 / 로딩화면                                                               |                                                            인스타캡쳐 / 마이페이지                                                             | 
 
-**`👋 서비스명`**
+### **`👋 서비스명`**
 
 <aside>
-🍀 **`럭키 럭키 체인지 a.k.a. 럭럭체`**
+#### 🍀 럭키 럭키 체인지 a.k.a. 럭럭체
 
 </aside>
 
-**`서비스 설명`**
+### **`서비스 설명`**
 
 <aside>
-🍀 불행한 상황들을 적으면 럭키한 초긍정적 사고로 변환해주는 서비스
+#### 🍀 불행한 상황들을 적으면 럭키한 초긍정적 사고로 변환해주는 서비스
 
 </aside>
 
