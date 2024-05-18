@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_background" />
+
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/img_info_camera_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="302dp"
+        android:text="닉네임을 지어주세요"
+        android:textAppearance="@style/Head1_M_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="413dp"
+        android:text="나이를 알려주세요"
+        android:textAppearance="@style/Head1_M_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="525dp"
+        android:text="MBTI를 알려주세요"
+        android:textAppearance="@style/Head1_M_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_edit_text_sqaure"
+        android:hint="닉네임"
+        android:imeOptions="actionNext"
+        android:paddingStart="12dp"
+        android:textAppearance="@style/Body1_M_16"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvNicknameCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/Body1_M_16"
+
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_age"
+        android:textAppearance="@style/Body1_M_16"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_edit_text_sqaure"
+        android:hint="나이"
+        android:imeOptions="actionNext"
+        android:paddingStart="12dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_mbti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="557dp"
+        android:textAppearance="@style/Body1_M_16"
+
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_edit_text_sqaure"
+        android:hint="MBTI"
+        android:imeOptions="actionNext"
+        android:paddingStart="12dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_clover_01"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="301dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_info_clover" />
+
+    <ImageView
+        android:id="@+id/iv_clover_02"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="412dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_info_clover" />
+
+    <ImageView
+        android:id="@+id/iv_clover_03"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="526dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_info_clover" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="689dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/mg_bcbcbc"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="완료"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
