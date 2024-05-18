@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/img_home_bg"
+        android:id="@+id/iv_home_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/img_home_bg" />
 
     <ImageView
-        android:id="@+id/bg_home_logo"
+        android:id="@+id/iv_home_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -32,7 +32,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_home_mypage"
-        app:layout_constraintBottom_toBottomOf="@+id/bg_home_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,10 +48,10 @@
         android:textAppearance="@style/Head1_M_20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bg_home_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_home_logo" />
 
     <ImageView
-        android:id="@+id/bg_home_cursor"
+        android:id="@+id/iv_home_cursor"
         android:layout_width="13dp"
         android:layout_height="21dp"
         android:layout_marginTop="26dp"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_nickname" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/ll_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_nickname">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_title_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="오늘 "
@@ -81,40 +81,43 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_nickname" />
 
         <TextView
+            android:id="@+id/tv_title_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="불행했던"
             android:textAppearance="@style/Yde1_L_20"
             android:textColor="@color/blue_5397f3"
-            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/tv_title_1"
             app:layout_constraintTop_toBottomOf="@+id/tv_nickname" />
 
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_title_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="순간이 있었나요?"
         android:textAppearance="@style/Head1_M_20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/ll_title" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_letter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:padding="16dp"
         android:src="@drawable/img_home_letter"
-        app:layout_constraintBottom_toBottomOf="@+id/img_home_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_3" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_letter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -128,24 +131,25 @@
         android:maxLength="96"
         android:maxLines="6"
         android:textAppearance="@style/Head1_M_20"
-        app:layout_constraintBottom_toBottomOf="@+id/img_home_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_3" />
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_clear"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="60dp"
-        android:background="@color/black"
+        android:layout_marginBottom="36dp"
+        android:background="@color/mg_bcbcbc"
         android:text="완료"
         android:textAppearance="@style/Head1_M_20"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/img_home_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_home_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
